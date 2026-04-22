@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family - 9 Anggota Keluarga</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f0e8 0%, #e8e0d5 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #5c3d2e;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #8b6b4f;
+            border-top: 2px solid #d4b48c;
+            border-bottom: 2px solid #d4b48c;
+            display: inline-block;
+            padding: 8px 25px;
+        }
+
+        /* Grid 3x3 */
+        .grid-keluarga {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+
+        /* Kartu anggota */
+        .kartu {
+            background: white;
+            border-radius: 20px;
+            text-align: center;
+            padding: 25px 15px 25px 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .kartu:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        /* Ikon besar */
+        .ikon {
+            font-size: 5rem;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .nama {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #4a2e1e;
+            margin-bottom: 5px;
+        }
+
+        .status {
+            font-size: 0.9rem;
+            color: #a07d5c;
+            margin-bottom: 10px;
+        }
+
+        .kata {
+            font-size: 0.8rem;
+            color: #7a5a3e;
+            font-style: italic;
+            background: #f9f5ef;
+            padding: 5px 12px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 0 20px;
+            border-top: 1px solid #d4b48c;
+            color: #8b6b4f;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        .hati {
+            color: #e74c3c;
+            font-size: 1.2rem;
+        }
+
+        /* Responsif */
+        @media (max-width: 700px) {
+            .grid-keluarga {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+            header h1 {
+                font-size: 2.2rem;
+            }
+            .ikon {
+                font-size: 4rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid-keluarga {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>👨‍👩‍👧‍👦 My Family</h1>
+        <p>9 hati • 1 rumah • sejuta cerita</p>
+    </header>
+
+    <div class="grid-keluarga">
+        
+        <!-- 1. Ayah (laki-laki) -->
+        <div class="kartu">
+            <div class="ikon">🤵</div>
+            <div class="nama">Ayah</div>
+            <div class="status">Kepala Keluarga</div>
+            <div class="kata">"Pemimpin yang bijaksana"</div>
+        </div>
+
+        <!-- 2. Ibu (perempuan + hijab) -->
+        <div class="kartu">
+            <div class="ikon">🧕🏽</div>
+            <div class="nama">Ibu</div>
+            <div class="status">Mutiara Keluarga</div>
+            <div class="kata">"Penyayang & sabar"</div>
+        </div>
+
+        <!-- 3. Anak ke-1 (perempuan + hijab) -->
+        <div class="kartu">
+            <div class="ikon">🧕</div>
+            <div class="nama">Anak ke-1</div>
+            <div class="status">Kakak perempuan</div>
+            <div class="kata">"Si Seni & Penyayang"</div>
+        </div>
+
+        <!-- 4. Anak ke-2 (laki-laki) -->
+        <div class="kartu">
+            <div class="ikon">👨‍💻</div>
+            <div class="nama">Anak ke-2</div>
+            <div class="status">Anak kedua</div>
+            <div class="kata">"sporty & rajin"</div>
+        </div>
+
+        <!-- 5. Anak ke-3 (laki-laki) -->
+        <div class="kartu">
+            <div class="ikon">🏃‍♂️</div>
+            <div class="nama">Anak ke-3</div>
+            <div class="status">Anak ketiga</div>
+            <div class="kata">"sporty & sabar"</div>
+        </div>
+
+        <!-- 6. Anak ke-4 (laki-laki) -->
+        <div class="kartu">
+            <div class="ikon">🏃‍♂️</div>
+            <div class="nama">Anak ke-4</div>
+            <div class="status">Anak keempat</div>
+            <div class="kata">"sporty & periang"</div>
+        </div>
+
+        <!-- 7. Anak ke-5 (laki-laki) -->
+        <div class="kartu">
+            <div class="ikon">🏃‍♂️</div>
+            <div class="nama">Anak ke-5</div>
+            <div class="status">Anak kelima</div>
+            <div class="kata">"sporty & kreatif"</div>
+        </div>
+
+        <!-- 8. Anak ke-6 (perempuan + hijab) -->
+        <div class="kartu">
+            <div class="ikon">🧕🏽</div>
+            <div class="nama">Anak ke-6</div>
+            <div class="status">Anak keenam</div>
+            <div class="kata">"Si Manis & lucu"</div>
+        </div>
+
+        <!-- 9. Anak ke-7 (perempuan + hijab) -->
+        <div class="kartu">
+            <div class="ikon">🧕</div>
+            <div class="nama">Anak ke-7</div>
+            <div class="status">Si Bungsu</div>
+            <div class="kata">"Manja & lucu"</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Dibuat dengan <span class="hati">❤️</span> untuk Keluargaku tercinta</p>
+        <p style="font-size: 0.8rem; margin-top: 10px;">Keluarga bukan tentang sempurna, tapi tentang saling menerima.</p>
+    </footer>
+</div>
+
+</body>
+</html>
